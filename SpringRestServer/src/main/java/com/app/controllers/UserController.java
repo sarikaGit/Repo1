@@ -14,7 +14,7 @@ import com.app.pojos.User;
 import com.app.services.IUserService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/users")
 public class UserController {
 
