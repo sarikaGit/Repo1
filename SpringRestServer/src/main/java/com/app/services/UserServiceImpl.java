@@ -33,4 +33,10 @@ public class UserServiceImpl implements IUserService {
 		
 	}
 
+	@Override
+	public User getUserById(int id) {
+		 
+		return userRepository.findById(id).get();
+	}
+
 }

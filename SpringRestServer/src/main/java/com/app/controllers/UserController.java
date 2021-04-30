@@ -33,6 +33,12 @@ public class UserController {
         return  userService.getUsers();
     }
 
+    @GetMapping
+    public User getUserById(int id)
+    {
+      return userService.getUserById(id);
+    }
+    
     @PostMapping
     void addUser(@RequestBody User user) {
         userService.addUser(user);
