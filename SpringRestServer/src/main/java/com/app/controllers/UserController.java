@@ -26,7 +26,10 @@ public class UserController {
 		System.out.println("In constr of "+getClass().getName());
 	}
     
-    
+    @GetMapping 
+    public List<User> getUserById() {
+        return  ;
+    }
 
     @GetMapping 
     public List<User> getUsers() {
