@@ -30,7 +30,7 @@ public class UserServiceImpl implements IUserService {
 	@Override
 	public void addUser(User user) {
 		userRepository.save(user);
-		
+		System.out.println();
 	}
 
 	@Override
