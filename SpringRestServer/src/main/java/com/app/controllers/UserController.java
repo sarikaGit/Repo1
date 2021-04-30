@@ -14,7 +14,7 @@ import com.app.pojos.User;
 import com.app.services.IUserService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/users")
 public class UserController {
 
@@ -36,6 +36,12 @@ public class UserController {
         return  userService.getUsers();
     }
 
+    @GetMapping
+    public User getUserById(int id)
+    {
+      return userService.getUserById(id);
+    }
+    
     @PostMapping
     void addUser(@RequestBody User user) {
         userService.addUser(user);
